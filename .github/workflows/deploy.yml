@@ -45,4 +45,5 @@ jobs:
         env:
           cname: junie.land
           PUBLISH_DIR: ./build
+          PUBLISH_BRANCH: gh-pages
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
