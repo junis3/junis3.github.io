@@ -1,28 +1,44 @@
 import React from 'react';
+import { profileImageUrl } from 'etc/consts';
+import Header from './Header';
 
 function Main() {
-  return (
-    <>
-      <div>
-        안녕하세요! 방문해주셔서 감사합니다! 
-      </div>
-      <div>
-        죄송하지만 잠깐동안 사이트를 뜯어 고치려고 합니다..!!! ㅜㅜㅜㅜ
-      </div>
-      <div>
-        11/24 (화) 이후 방문해주시면 완성된 사이트를 만나실 수 있습니다! 감사합니다!
-      </div>
-      <div>
-        Hello! We are so happy that you've visited us. 
-      </div>
-      <div>
-        But the site will be in a construction for just a bit while.
-      </div>
-      <div>
-        Please visit us after 11/24 (Tue) to see complete website. Thank you.
-      </div>
-    </>
-  );
+    return (
+        <>
+            <img src={profileImageUrl} className='profileImage' />
+            <div className='title center'>
+                김준원
+            </div>
+            <div className='subtitle center'>
+                서울대학교 자유전공학부
+            </div>
+            <div className='link center'>
+                <a href='https://junie.s3.ap-northeast-2.amazonaws.com/CV.pdf'>
+                    CV
+                </a>
+            </div>
+            <div className='link center'>
+                <a href='https://blog.junie.land'>
+                    Blog
+                </a>
+            </div>
+            <div className='link center'>
+                <a href='https://github.com/junis3'>
+                    Github
+                </a>
+            </div>
+            <div className='link center'>
+                <a href='https://www.acmicpc.net/user/junie'>
+                    Baekjoon Online Judge
+                </a>
+            </div>
+            <div className='link center'>
+                <a href='https://codeforces.com/profile/junie'>
+                    Codeforces
+                </a>
+            </div>
+        </>
+    );
 }
 
 export default Main;

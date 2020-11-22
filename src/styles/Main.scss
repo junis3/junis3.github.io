@@ -1,14 +1,59 @@
+@import 'index.scss';
+
 body {
-    background-color: #333333;
+    background-color: #f3f3f3;
+}
+
+* {
+    position: relative;
 }
 
 #root {
-    padding: 10px;
+    padding: 0px 40px;
 
-    > div {
-        font-size: 24px;
+    > div.construction {
+        font-size: 32px;
+        line-height: 40px;
         font-weight: 200;
-        color: white;
-        margin: 10px;
+        color: black;
+        margin: 32px 0px;
     }
+}
+
+.profileImage {
+    left: calc(50% - 150px);
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+    @media (max-width: $max-mobile-width) {
+        margin-top: 50px;
+    }
+}
+
+.center {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 24px;
 }
