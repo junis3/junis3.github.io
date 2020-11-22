@@ -42,8 +42,7 @@ jobs:
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.5.0
-        with:
+        env:
           cname: junie.land
           PUBLISH_DIR: ./build
-        env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
