@@ -44,5 +44,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2.5.0
         with:
           cname: junie.land
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_DIR: ./build
