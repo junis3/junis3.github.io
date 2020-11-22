@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy
 
 # Controls when the action will run. 
 on:
@@ -41,4 +41,9 @@ jobs:
           NODE_ENV: production
           
       - name: Deploy
-        run: yarn deploy
+        uses: peaceiris/actions-gh-pages@v2.5.0
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: main
+          PUBLISH_DIR: ./build
+          SCRIPT_MODE: true
