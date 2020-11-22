@@ -1,0 +1,14 @@
+body {
+    background-color: #333333;
+}
+
+#root {
+    padding: 10px;
+
+    > div {
+        font-size: 24px;
+        font-weight: 200;
+        color: white;
+        margin: 10px;
+    }
+}
