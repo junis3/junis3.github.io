@@ -13,30 +13,22 @@ function Main() {
             <div className='subtitle center'>
                 서울대학교 자유전공학부
             </div>
-            <div className='link center'>
-                <a href='https://junie.s3.ap-northeast-2.amazonaws.com/CV.pdf'>
+            <div className='buttonContainer'>
+                <button onClick={() => window.location.href = 'https://junie.s3.ap-northeast-2.amazonaws.com/CV.pdf' }>
                     CV
-                </a>
-            </div>
-            <div className='link center'>
-                <a href='https://blog.junie.land'>
+                </button>
+                <button onClick={() => window.location.href = 'https://blog.junie.land' }>
                     Blog
-                </a>
-            </div>
-            <div className='link center'>
-                <a href='https://github.com/junis3'>
+                </button>
+                <button onClick={() => window.location.href = 'https://github.com/junis3' }>
                     Github
-                </a>
-            </div>
-            <div className='link center'>
-                <a href='https://www.acmicpc.net/user/junie'>
+                </button>
+                <button onClick={() => window.location.href = 'https://www.acmicpc.net/user/junie' }>
                     Baekjoon Online Judge
-                </a>
-            </div>
-            <div className='link center'>
-                <a href='https://codeforces.com/profile/junie'>
+                </button>
+                <button onClick={() => window.location.href = 'https://codeforces.com/profile/junie' }>
                     Codeforces
-                </a>
+                </button>
             </div>
         </>
     );

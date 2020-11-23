@@ -21,7 +21,7 @@ body {
 
 .background {
     position: fixed;
-    background: #333333;
+    background: $main-color;
     height: 100px;
     width: 100%;
     &::after {
@@ -31,11 +31,11 @@ body {
         top: 100px;
         width: 0;
         height: 0;
-        border-top: 300px solid #333333;
+        border-top: 300px solid $main-color;
         border-left: 100vw solid rgba(0,0,0,0);
 
         @media (max-width: $max-mobile-width) {
-            border-top: 200px solid #333333;
+            border-top: 200px solid $main-color;
         }
     }
 }
@@ -76,4 +76,26 @@ body {
     line-height: 24px;
     font-weight: 500;
     margin-top: 24px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    button {
+        border-radius: 50%;
+//        border: -internal-light-dark(black, rgb(133, 133, 133));
+        height: 160px;
+        width: 160px;
+        background: rgba($main-color, 0.2);//linear-gradient(271.11deg, white 0.92%, rgba(255, 255, 255, 0) 103.95%), linear-gradient(0deg, #f3f3f3, $main-color);
+        margin: 20px;
+        flex-grow: 0;
+        flex-shrink: 0;  
+        font-size: 16px;
+        font-weight: 400;  
+        cursor: pointer;
+    }
 }
