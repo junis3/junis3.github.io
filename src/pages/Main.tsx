@@ -5,6 +5,7 @@ import Header from './Header';
 function Main() {
     return (
         <>
+            <div className='background' />
             <img src={profileImageUrl} className='profileImage' />
             <div className='title center'>
                 김준원

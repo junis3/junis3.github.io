@@ -2,6 +2,7 @@
 
 body {
     background-color: #f3f3f3;
+    color: #333333;
 }
 
 * {
@@ -9,14 +10,33 @@ body {
 }
 
 #root {
-    padding: 0px 40px;
-
     > div.construction {
         font-size: 32px;
         line-height: 40px;
         font-weight: 200;
         color: black;
         margin: 32px 0px;
+    }
+}
+
+.background {
+    position: fixed;
+    background: #333333;
+    height: 100px;
+    width: 100%;
+    &::after {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 0;
+        height: 0;
+        border-top: 300px solid #333333;
+        border-left: 100vw solid rgba(0,0,0,0);
+
+        @media (max-width: $max-mobile-width) {
+            border-top: 200px solid #333333;
+        }
     }
 }
 
