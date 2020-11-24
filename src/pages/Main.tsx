@@ -1,5 +1,5 @@
 import React from 'react';
-import { profileImageUrl } from 'etc/consts';
+import { blogUrl, bojUrl, codeforcesUrl, cvUrl, githubUrl, profileImageUrl } from 'etc/consts';
 import Header from './Header';
 
 function Main() {
@@ -14,19 +14,19 @@ function Main() {
                 서울대학교 자유전공학부
             </div>
             <div className='buttonContainer'>
-                <button onClick={() => window.location.href = 'https://junie.s3.ap-northeast-2.amazonaws.com/CV.pdf' }>
+                <button onClick={() => window.location.href = cvUrl }>
                     CV
                 </button>
-                <button onClick={() => window.location.href = 'https://blog.junie.land' }>
+                <button onClick={() => window.location.href = blogUrl }>
                     Blog
                 </button>
-                <button onClick={() => window.location.href = 'https://github.com/junis3' }>
+                <button onClick={() => window.location.href = githubUrl }>
                     Github
                 </button>
-                <button onClick={() => window.location.href = 'https://www.acmicpc.net/user/junie' }>
+                <button onClick={() => window.location.href = bojUrl }>
                     Baekjoon Online Judge
                 </button>
-                <button onClick={() => window.location.href = 'https://codeforces.com/profile/junie' }>
+                <button onClick={() => window.location.href = codeforcesUrl }>
                     Codeforces
                 </button>
             </div>
