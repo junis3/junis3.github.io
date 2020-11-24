@@ -1,5 +1,5 @@
 import React from 'react';
-import { blogUrl, bojUrl, codeforcesUrl, cvUrl, githubUrl, profileImageUrl } from 'etc/consts';
+import { blogUrl, bojUrl, codeforcesUrl, cvUrl, emailFront, emailDomain, githubUrl, profileImageUrl } from 'etc/consts';
 import Header from './Header';
 
 function Main() {
@@ -14,6 +14,9 @@ function Main() {
                 서울대학교 자유전공학부
             </div>
             <div className='buttonContainer'>
+                <button onClick={() => window.location.href = 'mailto:' + emailFront + '@' + emailDomain }>
+                    Mail
+                </button>
                 <button onClick={() => window.location.href = cvUrl }>
                     CV
                 </button>
