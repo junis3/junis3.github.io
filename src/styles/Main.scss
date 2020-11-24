@@ -20,13 +20,13 @@ body {
 }
 
 .background {
-    position: fixed;
+    position: absolute;
     background: $main-color;
     height: 100px;
     width: 100%;
     &::after {
         content: '';
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 100px;
         width: 0;
