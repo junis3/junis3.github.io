@@ -21,7 +21,7 @@ body {
 
 .background {
     position: absolute;
-    background: $main-color;
+    background: #00000000;
     height: 100px;
     width: 100%;
     &::after {
@@ -31,7 +31,7 @@ body {
         top: 100px;
         width: 0;
         height: 0;
-        border-top: 300px solid $main-color;
+        border-top: 300px solid #00000000;
         border-left: 100vw solid rgba(0,0,0,0);
 
         @media (max-width: $max-mobile-width) {
@@ -84,10 +84,12 @@ body {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 40px;
+    border: none;
 
     button {
         border-radius: 50%;
 //        border: -internal-light-dark(black, rgb(133, 133, 133));
+        border: none;
         height: 160px;
         width: 160px;
         background: rgba($main-color, 0.2);//linear-gradient(271.11deg, white 0.92%, rgba(255, 255, 255, 0) 103.95%), linear-gradient(0deg, #f3f3f3, $main-color);

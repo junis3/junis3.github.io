@@ -1,6 +1,8 @@
 import React from 'react';
 
-
+let r = [255, 255, 255, 100,  55, 155, 255];
+let g = [255, 155, 255, 255, 255, 155, 155];
+let b = [255, 155,  99, 100, 255, 255, 255];
 
 function PushGame() {
     let [board, setBoard] = React.useState<number[][]>([
@@ -33,7 +35,7 @@ function PushGame() {
             { board && [0, 1, 2, 3, 4].map((y) => (
                 <div>
                     { [0, 1, 2, 3, 4].map((x) => (
-                        <button style={{width: '100px', height: '100px', fontSize: '36px', fontWeight: 'bold', backgroundColor: `rgb(${75+board[y][x]*30}, ${75+board[y][x]*30}, ${75+board[y][x]*30})`}} onClick={onClick(y, x)}> {board[y][x]} </button>
+                        <button style={{width: '100px', height: '100px', fontSize: '36px', fontWeight: 'bold', backgroundColor: `rgb(${r[board[y][x]]}, ${g[board[y][x]]}, ${b[board[y][x]]})`}} onClick={onClick(y, x)}> {board[y][x]} </button>
                     ))}
                 </div>
             )) }

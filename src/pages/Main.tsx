@@ -8,29 +8,29 @@ function Main() {
             <div className='background' />
             <img src={profileImageUrl} className='profileImage' />
             <div className='title center'>
-                김준원
+                Junwon Kim
             </div>
             <div className='subtitle center'>
-                서울대학교 자유전공학부
+                In the site, you can either...
             </div>
             <div className='buttonContainer'>
                 <button onClick={() => window.location.href = 'mailto:' + emailFront + '@' + emailDomain }>
-                    Mail
+                    Mail me
                 </button>
                 <button onClick={() => window.location.href = cvUrl }>
-                    CV
+                    Take a look at my CV
                 </button>
                 <button onClick={() => window.location.href = blogUrl }>
-                    Blog
+                    Visit my blog
                 </button>
                 <button onClick={() => window.location.href = githubUrl }>
-                    Github
+                    Visit my Github profile
                 </button>
                 <button onClick={() => window.location.href = bojUrl }>
-                    Baekjoon Online Judge
+                    Visit my Baekjoon Online Judge profile
                 </button>
                 <button onClick={() => window.location.href = codeforcesUrl }>
-                    Codeforces
+                    Visit my Codeforces profile
                 </button>
             </div>
         </>
